@@ -1,0 +1,466 @@
+body {
+    margin: 0;
+    font-size: 1.1em;
+    background-image: url("imgs/illustration.svg");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: center 15%;
+    background-attachment: fixed;
+
+    font-family: latolight_italic;
+    color: #1C1C1C;
+}
+
+
+
+
+/* GENERAL */
+.boxes {
+    max-width: 35em;
+    margin: 0 auto;
+
+    background: white;
+    border: 10px solid #1C1C1C;
+    border-radius: 10px;
+    padding: 6.5em 4em 7em;
+
+    font-family: latoregular;
+}
+
+.marged{
+    margin-top: 5em;
+
+}
+
+.marginbot {
+    margin-bottom: 3em;
+}
+
+
+
+
+/* IMGS */
+#titreevent {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4em;
+}
+
+#date {
+    float: left;
+    margin-right: 1.3em;
+    height: 6em;
+}
+
+#schema {
+    width: 100%;
+}
+
+#schemabar {
+    width: 100%;
+}
+
+
+
+
+/* TEXTE STYLE */
+#soustitre {
+    margin-top: 3em;
+    font-family: latoblack;
+    line-height: 1.4em;
+
+}
+
+h1 {
+    font-family: latoblack_italic;
+    font-size: 2.2em;
+    line-height: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+h2 {
+    margin-top: 0.7em;
+    font-family: latoblack;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-family: latoitalic;
+    font-size: 1.1em;
+    margin-top: 3em;
+}
+
+.lightital {
+    margin: 1.5em 0;
+    font-family: latolight_italic;
+}
+
+.boldital {
+    font-family: latobold_italic;
+}
+
+#intervenants {
+    line-height: 1.5em;
+}
+
+/* LINKS */
+a {
+    background-color: transparent;
+    text-decoration : none;
+}
+
+a strong {
+    font-family: latoblack_italic;
+    border-bottom: 3px solid black;
+}
+a strong:hover {border-bottom-color: blue;}
+
+
+a span {
+    font-family: latoblack_italic;
+    text-decoration : underline;
+}
+
+.dl {
+    font-family: latoblack_italic;
+    border-bottom: 3px solid black;
+    font-size: 0.9em;
+}
+.dl:hover {border-bottom-color: blue;}
+
+.dl2 {
+    display: block;
+    text-align: right;
+    margin-top: 3em;
+}
+
+a:link {color: #1C1C1C;}
+a:visited {color: #343434;}
+a:hover {color: blue;}
+a:active {color: blue;}
+
+
+
+
+/* FORMULAIRES */
+.button {
+    width: 15em;
+    margin: 0 auto;
+    border: 10px solid #1C1C1C;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: block;
+    padding-bottom: 0.7em;
+
+    font-family: latobold_italic;
+    font-size: 1em;
+    background-color: #1C1C1C;
+    color: white;
+}
+.button:hover {
+    border-color: blue;
+    background-color: blue;
+}
+
+.inscription {
+    color: white;
+    background-color: #1C1C1C;
+
+    max-width: 20em;
+    padding-bottom: 6em;
+    margin-top: -5em;
+}
+
+fieldset {
+    margin-top: 1em;
+    padding: 0;
+    border: none;
+}
+
+.simpleboite {
+    margin-bottom: 1em;
+    border: 4px solid white;
+    border-radius: 4px;
+    margin-left: -0.75em;
+
+    font-family: latoblack_italic;
+    font-size: 0.8em;
+}
+
+.submit {
+    float: left;
+    padding: 0.5em 1.5em;
+    background-color: white;
+}
+.submit:hover {
+    border-color: blue;
+    background-color: blue;
+    color: white;
+}
+
+
+    /* NEWS */
+    #newsletter {
+        display: none;
+    }
+
+    input, textarea {
+    width: 100%;
+    padding: 0.5em 0.5em;
+    }
+
+
+    /* ATELIERS */
+    #formulaire {
+        display: none;
+    }
+
+    input[type=checkbox] {
+        margin-right: 1em;
+        border-radius: 4px;
+        -webkit-appearance:button;
+        border: 4px solid #1C1C1C;
+        background-color: #1C1C1C;
+        overflow:hidden;
+        width: 2em;
+        height: 2em;
+    }
+    input[type=checkbox]:checked {
+        border-color: blue;
+        background-color: blue;
+    }
+    input[type=checkbox]:hover {
+        border-color: blue;
+    }
+
+    #checkboxbox {
+        margin-left: -0.8em;
+        font-size: 0.8em;
+    }
+
+    label {
+        display: block;
+        margin-left: 2.5em;
+        margin-top: -1.8em;
+    }
+
+
+
+
+/* BOX FICTION */
+#titrebox {
+    margin-top: 18em;
+}
+
+#boxfiction{
+    background: #1C1C1C;
+    color: #FFFFFF;
+    border-color: #1C1C1C;
+}
+
+#fontfiction {
+    font-family: hackitalic;
+    font-size: 1em;
+}
+
+#boxfiction .lightital {
+    margin-top: 4em;
+}
+
+
+
+
+/* BOX QUESTION */
+#retorquer{
+    background: #1C1C1C;
+    color: white;
+    padding-bottom: 6em;
+
+    border-bottom: none;
+    border-color: #1C1C1C;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    color: #EDEDED;
+
+}
+
+#nocloud{
+    background: white;
+    padding-top: 4em;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #1C1C1C;
+}
+
+#cloudbox {
+    max-width: 30em;
+    position: relative;
+    margin: auto;
+}
+
+#cloudimg {
+    width: 18em;
+    position: absolute;
+    margin-top: -1em;
+}
+
+#cloudtext {
+    margin-top: 3em;
+
+    margin-left: 20em;
+}
+
+#suite {
+    margin-top: 3em;
+}
+
+
+
+
+/*BOX SCHEMA */
+.schematitre {
+    font-family: latoblack_italic;
+    font-size: 1.5em;
+}
+
+#google {
+    float: left;
+    width: 40%;
+}
+
+#internet {
+    float: right;
+    width: 40%;
+    margin-bottom: 4em;
+}
+
+#aetb {
+    clear: both;
+    width: 55%;
+}
+
+
+
+
+/* BOX ATELIER */
+#atelier {
+    font-family: latoitalic;
+}
+
+#atelier h5 {
+    padding: 0.5em 0.9em;
+    border: 2px solid #1C1C1C;
+    border-radius: 4px;
+    float: left;
+    margin-right: 1em;
+    margin-top: 0;
+}
+
+#atelier h4 {
+    margin-bottom: 0em;
+    margin-top: 1.8em;
+    font-size: 1.3em;
+    font-family: latoblack;
+    margin-top: 0;
+
+}
+
+#atelier p {
+    clear: both;
+    font-family: latoitalic;
+    margin-bottom: 2em;
+}
+
+
+
+
+/* FOOTER */
+#footer {
+    padding-bottom: 0;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#zonelogos {
+    max-width: 30em;
+    margin-top: 4em;
+    margin: auto ;
+}
+
+.logos {
+    max-height: 5em;
+
+}
+
+#z {
+    clear: both;
+    margin-bottom: 4em;
+}
+
+
+
+
+/* FONTS */
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.ttf');
+    src: url('fonts/lato-regular-webfont.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoblack';
+    src: url('fonts/lato-black-webfont.ttf');
+    src: url('fonts/lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoblack_italic';
+    src: url('fonts/lato-blackitalic-webfont.ttf');
+    src: url('fonts/lato-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('fonts/lato-bold-webfont.ttf');
+    src: url('fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold_italic';
+    src: url('fonts/lato-bolditalic-webfont.ttf');
+    src: url('fonts/lato-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoitalic';
+    src: url('fonts/lato-italic-webfont.ttf');
+    src: url('fonts/lato-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latolight_italic';
+    src: url('fonts/lato-lightitalic-webfont.ttf');
+    src: url('fonts/lato-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hackitalic';
+    src: url('fonts/hack-italic-webfont.ttf');
+    src: url('fonts/hack-italic-webfont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
