@@ -8,15 +8,22 @@
 </head>
 
 <body>
+    <?php
+        include 'form/formHandlerNews.php';
+        include 'form/formHandlerAteliers.php';
+    ?>
+
     <div role="main" class="line">
         <div id="titrebox">
             <header role="banner" class="boxes">
                 <img id="titreevent" src="imgs/titreevent.svg" alt="titre événement"/>
                 <h3 id="soustitre">Une série de conférences et d'ateliers <br/>autour de la vie privée numérique <br/>et de l'auto-hébergement.</h3>
+
             </header>
             <button type="button" class="button" onClick="displayit();">abonnez-vous</br>à la newsletter !</button>
         </div>
     </div>
+
     <div id="newsletter" class="boxes inscription">
         <form method="POST" action="#">
             <fieldset>
@@ -29,14 +36,8 @@
                 <input class="simpleboite" type="text" name="url" maxlength="80" size="30">
             </div>
 
-            <!-- NB : this is also this block that will display error messages if
-                 any after clicking submit -->
-            <?php
-                include 'form/formHandlerNews.php'
-            ?>
-
             <!-- Submit -->
-            <button class="simpleboite submit" type="submit" id="abonne">Je m'abonne</button>
+            <button class="simpleboite submit" type="submit" id="abonne" name="abonne" value="abonne">Je m'abonne</button>
             </fieldset>
         </form>
     </div>
@@ -146,6 +147,7 @@ L'inscription aux ateliers sera ouverte à partir du 10 décembre.</p>
                 </div>
             </div>
             <button type="button" class="button" onClick="displayit2()">Inscrivez-vous</br>aux ateliers !</button>
+
         </div>
         <div id="formulaire" class="boxes inscription">
             <form method="POST" action="#">
@@ -168,25 +170,21 @@ L'inscription aux ateliers sera ouverte à partir du 10 décembre.</p>
                     <!-- checkbox -->
                     <div id="checkboxbox">
                         <p class="lightital">Les ateliers sont indépendants mais il est conseillé de s'inscrire aux quatre. Le nombre de places étant limité, une liste d'attente sera mise en place et votre inscription vous sera confirmée par mail.</p>
-                        <input id="checkbox1" type="checkbox" name="checkbox1" value="atelier1" checked>
+                        <input id="checkbox1" type="checkbox" name="checkbox1" value="Yes" checked>
                         <label for="checkbox1">Atelier 1 - 17 janvier</label></br>
-                        <input id="checkbox2" type="checkbox" name="checkbox2" value="atelier2" checked>
+                        <input id="checkbox2" type="checkbox" name="checkbox2" value="Yes" checked>
                         <label for="checkbox2">Atelier 2 - 31 janvier</label></br>
-                        <input id="checkbox3" type="checkbox" name="checkbox3" value="atelier3" checked>
+                        <input id="checkbox3" type="checkbox" name="checkbox3" value="Yes" checked>
                         <label for="checkbox3">Atelier 3 - 14 février</label></br>
-                        <input id="checkbox4" type="checkbox" name="checkbox4" value="atelier4" checked>
+                        <input id="checkbox4" type="checkbox" name="checkbox4" value="Yes" checked>
                         <label for="checkbox4">Atelier 4 - 28 février</label></br>
                         <p class="lightital">Décochez les ateliers non souhaités.</p>
                     </div>
 
                     <!-- Submit -->
-                    <button class="simpleboite submit" type="submit">S'inscrire</button></br>
+                    <button class="simpleboite submit" type="submit" name="inscrire" value="inscrire">S'inscrire</button></br>
                 </fieldset>
             </form>
-
-            <?php
-                include 'form/formHandlerAteliers.php'
-            ?>
 
         </div>
 

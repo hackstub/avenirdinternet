@@ -1,11 +1,20 @@
 <?php
 
-
-    function died($error)
+    if (isset($_POST['abonne']) && ($_POST['abonne'] == "abonne")) {
+ 
+    function displayMessage($message)
     {
-        echo "<div style=\"color:#D03030\">\n";
-        echo $error;
-        echo "</div>\n";
+        echo '<div class="line"><div class="marged"><div class="boxes">';
+        echo $message;
+        echo '</div></div></div>';
+    }
+
+    function displayError($error)
+    {
+        $message  = "<div style=\"color:#D03030\">\n";
+        $message .= $error;
+        $message .= "</div>\n";
+        displayMessage($message);
     }
 
     function formCheck()
@@ -17,6 +26,7 @@
            !isset($_POST['url']))
         {
             $error_message .= "Il manque des champs dans le formulaire fourni";
+            return;
         }
 
         $email    = $_POST['email'];     // required
@@ -63,15 +73,17 @@
         @mail($email_to, $email_subject, $email_message, $headers);
 
         // Notice the user the mail was sent
-        echo "Votre inscription a bien été envoyée.<br/>";
+        displayMessage("Votre inscription a bien été envoyée.<br/>");
     }
 
     if(isset($_POST['email']))
     {
         $errorFromCheck = formCheck();
 
-        if ($errorFromCheck != "") { died($errorFromCheck); }
-        else                       { sendMail();             }
+        if ($errorFromCheck != "") { displayError($errorFromCheck); }
+        else                       { sendMail();                    }
+    }
+
     }
 
 ?>
