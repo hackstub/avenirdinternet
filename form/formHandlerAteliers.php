@@ -4,14 +4,14 @@
 
     function displayMessage($message)
     {
-        echo '<div class="line"><div class="marged"><div class="boxes">';
+        echo '<div class="marged"><div class="message">';
         echo $message;
-        echo '</div></div></div>';
+        echo '</div></div>';
     }
 
     function displayError($error)
     {
-        $message  = "<div style=\"color:#D03030\">\n";
+        $message  = "<div class=\"error\">\n";
         $message .= $error;
         $message .= "</div>\n";
         displayMessage($message);
@@ -84,7 +84,7 @@
         $comments = $_POST['comments'];
 
         // Create email-message
-        $email_message  = "Une nouvelle inscription a été reçue\n\n";
+        $email_message  = "Une nouvelle inscription a ete recue\n\n";
         $email_message .= "====================================\n\n";
         $email_message .= "[Nom]\n";
         $email_message .= clean_string($name)."\n\n";

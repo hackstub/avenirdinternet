@@ -3,15 +3,15 @@
     if (isset($_POST['abonne']) && ($_POST['abonne'] == "abonne")) {
  
     function displayMessage($message)
-    {
-        echo '<div class="line"><div class="marged"><div class="boxes">';
-        echo $message;
-        echo '</div></div></div>';
+    {         
+        echo '<div class="marged"><div class="message">';
+        echo $message;                                                                    
+        echo '</div></div>';
     }
 
     function displayError($error)
     {
-        $message  = "<div style=\"color:#D03030\">\n";
+        $message  = "<div class=\"error\">\n";
         $message .= $error;
         $message .= "</div>\n";
         displayMessage($message);
@@ -62,7 +62,7 @@
         $email_from    = $_POST['email'];
         $email_to      = "avenirsdinternet-news-join@lists.hackstub.netlib.re";
         $email_subject = "Nouvelle inscription";
-        $email_message = "Une nouvelle inscription a été reçue\n\n";
+        $email_message = "Une nouvelle inscription a ete recue\n\n";
 
         // Create email headers
         $headers = 'From: '         .$email_from."\r\n".
