@@ -140,6 +140,11 @@ a:visited {color: #343434;}
 a:hover {color: blue;}
 a:active {color: blue;}
 
+#streamLinks {
+    text-align: center;
+	float:      right;
+}
+
 #livestream {
 	color: white;
 	font-family: latoblack_italic;
@@ -147,11 +152,16 @@ a:active {color: blue;}
     border-radius: 10px;
 	background-color: #1C1C1C;
 	padding: 0.5em 0.5em;
-	float: right;
 }
+
 #livestream:hover {
 	border-color: blue;
 	background-color: blue;
+}
+
+#canalIRC {
+	padding: 0.5em 0.5em;
+	float: right;
 }
 
 /* FORMULAIRES */

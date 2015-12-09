@@ -15,7 +15,7 @@
                 <img id="titreevent" src="imgs/titreevent.svg" alt="titre événement"/>
                 <h3 id="soustitre">Une série de conférences et d'ateliers <br/>autour de la vie privée numérique <br/>et de l'auto-hébergement.</h3>
             </header>
-            <p id="here2" style="position: absolute;"></p>        
+            <p id="here" style="position: absolute;"></p>        
             <button type="button" class="button" onClick="displayit();">abonnez-vous</br>à la newsletter !</button>
         </div>
     </div>
@@ -58,7 +58,10 @@ Seuls quelques groupes de personnes refusent encore la connexion au réseau Goog
             <div class="boxes">
                 <img id="date" src="imgs/10.svg" alt="10"/>
                 <h2>jeudi &ndash; 16 h 45</br>décembre 2015</h2>
-                <a href="https://www.youtube.com/watch?v=PCT9do8chMo" id="livestream" target="_blank">>LIVE STREAM</a>
+                <div id="streamLinks">
+                    <a href="https://www.youtube.com/watch?v=PCT9do8chMo" id="livestream" target="_blank">>LIVE STREAM</a><br/><br/>
+                    <a href="http://irc.lc/geeknode/hackstub" id="canalIRC" target="_blank"><strong>Canal IRC</strong></a>
+                </div>
                 <h3>Conférence d'ouverture </br>à la médiathèque <a href="http://www.mediatheques.strasbourg.eu/medias/medias.aspx?INSTANCE=EXPLOITATION&PORTAL_ID=WBCT_WBCTDOC_28.xml&SYNCMENU=INF_MED_MALRAUX" target="_blank"><strong>Malraux</strong></a></h3>
                 <h1>Big brother entre réalité</br> et science-fiction</h1>
                 <p id="intervenants">intervenants :<br/>
@@ -148,7 +151,7 @@ L'inscription aux ateliers sera ouverte à partir du 10 décembre.</p>
                 </div>
             </div>
             <p id="here2" style="position: absolute;"></p>        
-            <button type="button" class="button" onClick="displayit2()">Inscrivez-vous</br>aux ateliers !</button>
+            <button type="button" class="button" style="display:none;" onClick="displayit2()">Inscrivez-vous</br>aux ateliers !</button>
         </div>
 
         <div id="formulaire" class="boxes inscription">
@@ -211,7 +214,7 @@ L'inscription aux ateliers sera ouverte à partir du 10 décembre.</p>
 
         <footer class="marged">
             <div id="footer" class="boxes">
-                <p>Ces événements sont organisés par <a href="https://hackstub.netlib.re/" target="_blank"><span>Hackstub</span></a>, hackerspace à Strasbourg, en partenariat avec le <a href="http://www.shadok.strasbourg.eu/" target="_blank"><span>Shadok</span></a> centre de culture numérique de la ville de Strasbourg et le FAI associatif <a href="http://www.arn-fai.net/" target="_blank"><span>Alsace Réseau Neutre</span></a>.</p>
+                <p>Ces événements sont organisés par <a href="https://hackstub.netlib.re/" target="_blank"><span>Hackstub</span></a>, hackerspace à Strasbourg, en partenariat avec le <a href="http://www.shadok.strasbourg.eu/" target="_blank"><span>Shadok</span></a>, fabrique du numérique de la ville de Strasbourg, et le FAI associatif <a href="http://www.arn-fai.net/" target="_blank"><span>Alsace Réseau Neutre</span></a>.</p>
                 <div id="zonelogos">
                     <img id="logo-hksb" class="logos" src="imgs/logos/hksb.svg" alt="hackstub-logo"/>
                     <img id="logo-arn" class="logos" src="imgs/logos/arn.svg" alt="arn-logo"/>
