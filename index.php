@@ -151,7 +151,7 @@ L'inscription aux ateliers sera ouverte à partir du 10 décembre.</p>
                 </div>
             </div>
             <p id="here2" style="position: absolute;"></p>        
-            <button type="button" class="button" style="display:none;" onClick="displayit2()">Inscrivez-vous</br>aux ateliers !</button>
+            <button type="button" class="button" onClick="displayit2()">Inscrivez-vous</br>aux ateliers !</button>
         </div>
 
         <div id="formulaire" class="boxes inscription">
