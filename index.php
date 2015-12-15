@@ -5,6 +5,9 @@
         <title>Avenir(s) d'internet</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="aibbsf.css" media="all">
+        
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
 </head>
 
 <body>
@@ -56,12 +59,17 @@ Seuls quelques groupes de personnes refusent encore la connexion au réseau Goog
 
         <div class="marged" >
             <div class="boxes">
+                <div class="done2">
+                    <span class="done">passé</span>
+                </div>
                 <img id="date" src="imgs/10.svg" alt="10"/>
                 <h2>jeudi &ndash; 16 h 45</br>décembre 2015</h2>
+<!--
                 <div id="streamLinks">
                     <a href="https://www.youtube.com/watch?v=PCT9do8chMo" id="livestream" target="_blank">>LIVE STREAM</a><br/><br/>
                     <a href="http://irc.lc/geeknode/hackstub" id="canalIRC" target="_blank"><strong>Canal IRC</strong></a>
                 </div>
+-->
                 <h3>Conférence d'ouverture </br>à la médiathèque <a href="http://www.mediatheques.strasbourg.eu/medias/medias.aspx?INSTANCE=EXPLOITATION&PORTAL_ID=WBCT_WBCTDOC_28.xml&SYNCMENU=INF_MED_MALRAUX" target="_blank"><strong>Malraux</strong></a></h3>
                 <h1>Big brother entre réalité</br> et science-fiction</h1>
                 <p id="intervenants">intervenants :<br/>
@@ -72,10 +80,22 @@ Cette conférence se veut une occasion d’aborder ce sujet par le biais de la s
                 <p class="boldital">Jérémie Zimmerman abordera les menaces pour la vie privée numérique dans un parallèle avec un univers de science-fiction bien connu.<br/>
 Léo Henry présentera ensuite deux nouvelles originales signées par le collectif d’auteurs francophones d’anticipation <a href="http://zanzibar.zone/" target="_blank"><span>Zanzibar</span></a>.</br>
 Ces deux interventions seront suivies d’une discussion entre les intervenants et la salle.</p>
+                
+                <h6>J. Zimmermann & L. Henry - Conférence : Big brother, entre réalité et science-fiction (CC-BY-SA)</h6>
+                <div class="audio-player">
+                    <audio id="audio-player" controls="controls">
+                        <source src="https://hackstub.netlib.re/docs/avenirsdinternet/enregistrements/montageSonConf1/confavenirsdinternet-zimmermann-henryQ4.ogg" type="audio/ogg">
+                        <source src="https://hackstub.netlib.re/docs/avenirsdinternet/enregistrements/montageSonConf1/confavenirsdinternet-zimmermann-henry160.mp3" type="audio/mp3">
+                        Votre navigateur ne supporte pas le player audio.
+                    </audio>
+                </div>
+                </br></br></br></br>
+<!--
                 <div class="dl2">
                     <a class="dl" href="ical/10decembre-avenirsdinternet.ics">[ajouter au calendrier]</a>
                 </div>
             </div>
+-->
         </div>
 
 
@@ -87,15 +107,17 @@ Ces deux interventions seront suivies d’une discussion entre les intervenants 
         </div>
         <div id="nocloud" class="boxes">
             <p>Quelles données faites vous circuler sur le réseau ? Comment circulent-elles ? Chez qui résident-elles ?</p>
-            <div id="cloudbloc">
-                <img id="cloudimg" src="imgs/thereisnocloud.svg" alt="There is no cloud FSFE"/>
-                <div id="cloudtext">
+            <ol id="cloudbloc">
+                <li id="cloudimg">
+                    <img src="imgs/thereisnocloud.svg" alt="There is no cloud FSFE"/>
+                </li>
+                <li id="cloudtext">
                     <h4>Démystifier l'internet</h4>
                     <p class="boldital">« There is no cloud, just other people’s computers. »</p>
                     <p class="boldital">« Le « cloud » n’existe pas, il y a seulement les ordinateurs des autres. »</p>
-                </div>
-            </div>
-            <p id="suite">Avez-vous réellement confiance dans les personnes (Google, Apple, Free, ... autre ) qui hébergent vos données ? Si non, pourquoi ne pas les héberger vous-même… ou chez vos amis ?</p>
+                </li>
+            </ol>
+            <p>Avez-vous réellement confiance dans les personnes (Google, Apple, Free, ... autre ) qui hébergent vos données ? Si non, pourquoi ne pas les héberger vous-même… ou chez vos amis ?</p>
             <p>Et nous, en fait, on aimerait vous aider à y voir plus clair ;-).</p>
         </div>
 
@@ -125,7 +147,7 @@ Ces deux interventions seront suivies d’une discussion entre les intervenants 
                 <h1>Ateliers d'initiation à </br>l'auto-hébergement</h1>
                 <p class="boldital">Les dimanches de 14 h à 18 h au <a href="http://www.shadok.strasbourg.eu/"><strong>Shadok</strong></a></p>
                 <p class="lightital">L'auto-hébergement c'est construire son propre coin d'internet pour communiquer avec le monde sans brader sa vie privée.</p>
-                <p class="boldital marginbot">Cette série d’atelier vise à faire découvrir le fonctionnement d’internet et rendre accessible l’auto-hébergement grâce à <a href="https://labriqueinter.net" target="_blank"><span>La brique internet</span></a>. Il s’agit d’un petit ordinateur à installer chez soi pour se connecter au réseau de façon sécurisée et gérer ses propres services d’email, de réseau social, de cloud, de partage multimédia, etc.</p>
+                <p class="boldital">Cette série d’atelier vise à faire découvrir le fonctionnement d’internet et rendre accessible l’auto-hébergement grâce à <a href="https://labriqueinter.net" target="_blank"><span>La brique internet</span></a>. Il s’agit d’un petit ordinateur à installer chez soi pour se connecter au réseau de façon sécurisée et gérer ses propres services d’email, de réseau social, de cloud, de partage multimédia, etc.</p>
 
                 <div id="atelier">
                     <h5>17 janvier</h5>
@@ -138,7 +160,7 @@ Ces deux interventions seront suivies d’une discussion entre les intervenants 
                     <h4>Atelier 3: Introduction à Yunohost et la brique internet.</h4>
                     <p>Présenter la brique internet, son installation et à passer en revue les principales possibilités offertes par un serveur <a href="http://yunohost.org" target="_blank"><span>Yunohost</span></a>.</p>
                     <h5>28 février</h5>
-                    <h4>Atelier 4: Atelier à géométrie variable</h4>
+                    <h4>Atelier 4: Atelier à géométrie variable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
                     <p>Un atelier pour apprendre à résoudre un problème sur sa brique internet et revenir sur les sessions précédentes.</p>
                 </div>
 
@@ -234,6 +256,20 @@ L'inscription aux ateliers sera ouverte à partir du 10 décembre.</p>
         function displayit2() {
             document.getElementById("formulaire").style.display="block";
         }
+    </script>
+    <script type="text/javascript">
+        $(function(){
+          $('#audio-player').mediaelementplayer({
+            alwaysShowControls: true,
+            features: ['playpause','progress','volume'],
+            audioVolume: 'horizontal',
+            enableKeyboard: true,
+            pauseOtherPlayers: true,
+            iPadUseNativeControls: false,
+            iPhoneUseNativeControls: false,
+            AndroidUseNativeControls: false
+          });
+        });
     </script>
 </body>
 </html>
