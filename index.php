@@ -56,6 +56,25 @@ Seuls quelques groupes de personnes refusent encore la connexion au réseau Goog
             </div>
         </div>
 
+        <div class="marged">
+            <div class="boxes">
+                <img id="date" src="imgs/4.svg" alt="4"/>
+                <h2>vendredi &ndash; 19 h </br>mars 2016</h2>
+                <h3>Conférence de clôture </br>au <a href="http://www.shadok.strasbourg.eu/"><strong>Shadok</strong></a></h3>
+                <h1>Défendre et concrétiser </br>un internet utopique</h1>
+                <p class="lightital">Face aux promoteurs d'un avenir technologique toujours plus indiscret et hors de contrôle, il est primordial de défendre des alternatives.</p>
+                <p class="lightital">Cette conférence sera l'occasion de faire le point sur les évènements précédents et de présenter les initiatives, locales ou non, qui s'engagent pour qui (re)ouvrent en pratique les portes d'un internet libre et non centralisé.</p>
+                <p class="boldital">Dans une première partie, <a href=""><span>Ljf</span></a> (Valentin Grimaud) viendra parler d'auto-hébergement. Il présentera notamment le projet <a href="https://yunohost.org/"><span>Yunohost</span></a> et <a href="https://labriqueinter.net/"><span>la Brique Internet</span></a> dont il est contributeur.</p>
+				<p class="boldital"><a href="http://edhelas.movim.eu/"><span>Edhelas</span></a> (Timothée Jaussoin), auteur du logiciel <a href="https://movim.eu/"><span>Movim</span></a>, présentera ensuite ce réseau social libre et décentralisé basé sur le standard XMPP.</p>
+				<p class="boldital">Enfin, <a href="http://karchnu.fr/about.html"><span>Karchnu</span></a> (Philippe Pittoli), président de l'association <a href="http://arn-fai.net/"><span>Alsace Réseau Neutre</span></a>, viendra présenter les fournisseurs d'accès à internet associatifs qui promeuvent un réseau neutre et respectueux des libertés.</p>
+
+                <div class="dl2">
+                    <a class="dl" href="ical/4mars-avenirsdinternet.ics">[ajouter au calendrier]</a>
+                </div>
+            </div>
+        </div>
+
+
 
         <div class="marged" >
             <div class="boxes">
@@ -144,6 +163,9 @@ Ces deux interventions seront suivies d’une discussion entre les intervenants 
 
         <div class="marged">
             <div class="boxes">
+	            <div class="done2">
+                    <span class="done">passé</span>
+                </div>
                 <h1>Ateliers d'initiation à </br>l'auto-hébergement</h1>
                 <p class="boldital">Les dimanches de 14 h à 18 h au <a href="http://www.shadok.strasbourg.eu/"><strong>Shadok</strong></a></p>
                 <p class="lightital">L'auto-hébergement c'est construire son propre coin d'internet pour communiquer avec le monde sans brader sa vie privée.</p>
@@ -167,13 +189,13 @@ Ces deux interventions seront suivies d’une discussion entre les intervenants 
 
                 <p class="boldital">Les quatre ateliers sont indépendants et destinés à un public débutant : ils chercheront à aborder de façon transversale diverses notions importantes en informatique pour permettre aux participant de mieux se repérer dans le fonctionnement d'un serveur personnel.</br>
 L'inscription aux ateliers sera ouverte à partir du 10 décembre.</p>
-                <p class="boldital">Pour inscrire cette formation dans la durée, l'ensemble des contenus des ateliers ainsi que diverses ressources pour approfondir seront également mis en ligne.</p>
+                <p class="boldital" id="newtext">Retrouvez le contenu des ateliers sur le <a href="https://hackstub.netlib.re/wiki/" target="_blank"><span>wiki du Hackstub</span></a>, celui-ci sera prochainement mis à jour mais vous pouvez d'ores et déjà refaire les ateliers chez vous en suivant chacune des parties.</p>
                 <div class="dl2">
                     <a class="dl" href="ical/ateliershackstub.zip">[ajouter au calendrier]</a>
                 </div>
             </div>
             <p id="here2" style="position: absolute;"></p>        
-            <button type="button" class="button" onClick="displayit2()">Inscrivez-vous</br>aux ateliers !</button>
+            <button type="button" class="button" onClick="displayit2()" style="display: none;">Inscrivez-vous</br>aux ateliers !</button>
         </div>
 
         <div id="formulaire" class="boxes inscription">
@@ -217,21 +239,7 @@ L'inscription aux ateliers sera ouverte à partir du 10 décembre.</p>
             include 'form/formHandlerAteliers.php';
         ?>
 
-        <div class="marged">
-            <div class="boxes">
-                <img id="date" src="imgs/4.svg" alt="4"/>
-                <h2>vendredi &ndash; 19 h </br>mars 2016</h2>
-                <h3>Conférence de clôture</h3>
-                <h1>Défendre et concrétiser </br>un internet utopique</h1>
-                <p class="lightital">Face aux promoteurs d'un avenir technologique toujours plus indiscret et hors de contrôle, il est primordial de  défendre des alternatives.</p>
-                <p class="boldital">Cette conférence sera l'occasion de faire le point sur les évènements précédents et de présenter les initiatives, locales ou non, qui s'engagent pour une autre vision de l'internet.</p>
-                <p class="boldital">Le FAI associatif Alsace Réseau Neutre viendra notamment présenter comment se construit aujourd'hui un internet associatif. Plus largement, nous aborderons les solutions pour garder le controle sur ses données numériques personnelles.</p>
 
-                <div class="dl2">
-                    <a class="dl" href="ical/4mars-avenirsdinternet.ics">[ajouter au calendrier]</a>
-                </div>
-            </div>
-        </div>
 
 
         <footer class="marged">

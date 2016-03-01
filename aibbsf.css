@@ -16,8 +16,8 @@ body {
     margin: 0 auto;
 
     background: white;
-    border: 10px solid #1C1C1C;
-    border-radius: 10px;
+    border: 8px solid #1C1C1C;
+    border-radius: 8px;
     padding: 6.5em 2em 7em;
 
     font-family: latoregular;
@@ -96,8 +96,8 @@ h3 {
 
 .done {
     font-family: latoblack_italic;
-    font-size: 3em;
-    border: 8px solid blue;
+    font-size: 2em;
+    border: 6px solid blue;
     border-radius: 15px;
     padding: 0.1em 0.4em 0.2em 0.3em;
     color: blue;
@@ -113,6 +113,13 @@ h3 {
     -webkit-transform: rotate(-28deg); /* Chrome, Safari, Opera */
     transform: rotate(-28deg);
 }
+
+#newtext  {
+	margin-top: 2em;
+	color: blue;
+}
+#newtext a:link {color: blue;}
+#newtext a:hover {color: black;}
 
 /* LINKS */
 a {
